@@ -88,15 +88,10 @@ AppAsset::register($this);
            e.preventDefault();
            jQuery.fancybox('photo', {
                href: $(this).find('img').attr('src'),
-               fitToView   : false,
+               fitToView   : true,
                openEffect  : 'none',
                closeEffect : 'none',
-               maxWidth    : 1000,
-               maxHeight   : 600,
-               minHeight   : 300,
-               height      : 300,
-               minWidth    : 800,
-               widtht      : 800
+               autoSize    : true
            });
        });
        $('.glyphicon-eye-open').off('click');
@@ -113,8 +108,7 @@ AppAsset::register($this);
                maxHeight   : 600,
                minHeight   : 300,
                height      : 300,
-               minWidth    : 800,
-               widtht      : 800
+               minWidth    : 800
            });//*/
        });
    });
